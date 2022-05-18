@@ -21,13 +21,13 @@ jobs:
         token: ${{ secrets.QHYBOT_GITHUB_TOKEN }}
     
     - name: Import GPG key for signing
-        uses: crazy-max/ghaction-import-gpg@v4.4.0
-        with:
-          gpg_private_key: ${{ secrets.QHYBOT_GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          git_config_global: true
-          git_user_signingkey: true
-          git_commit_gpgsign: true
+      uses: crazy-max/ghaction-import-gpg@v4.4.0
+      with:
+        gpg_private_key: ${{ secrets.QHYBOT_GPG_PRIVATE_KEY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
+        git_config_global: true
+        git_user_signingkey: true
+        git_commit_gpgsign: true
     
     # Run using Python 3.8 for consistency and aiohttp
     - name: Set up Python 3.8
