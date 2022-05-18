@@ -13,6 +13,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: ${{ github.actor != 'qhyBot' }}
 
     steps:
     # Check out repository under $GITHUB_WORKSPACE, so the job can access it
