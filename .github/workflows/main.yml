@@ -1,8 +1,6 @@
 name: Generate Stats Images
 
 on:
-  push:
-    branches: [ master ]
   schedule:
     - cron: "1 */2 * * *"
   workflow_dispatch:
