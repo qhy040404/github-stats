@@ -15,7 +15,7 @@ jobs:
 
     steps:
     # Check out repository under $GITHUB_WORKSPACE, so the job can access it
-    - uses: actions/checkout@v3.3.0
+    - uses: actions/checkout@v3.5.3
       with:
         token: ${{ secrets.QHYBOT_GITHUB_TOKEN }}
     
